@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table,th,td{
+    border:2px solid red;
+    padding:10px;
+    border-collapse:collapse;
+}
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>place</th> <!-- this data has been working  based on migrations folder data-->
+            <th>number</th>
+        </tr>
+        {% for i in res %} <!-- looping data  based on key from views.py (dictonary)-->
+        <tr>
+            <td>{{i.id}}</td>
+            <td>{{i.name}}</td>
+            <td>{{i.place}}</td>
+            <td>{{i.number}}</td>
+        </tr>
+        {% endfor%} <!-- loop end-->
+    </table>
+</body>
+
+</html>

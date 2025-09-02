@@ -1,0 +1,17 @@
+
+
+body h1{
+    font-size:30px;
+    font-family: 'Times New Roman', Times, serif;
+    font-variant: small-caps;
+    background-color: #003366;
+    color:white;
+    border-radius: 20px;
+    text-align: center;
+    line-height:50px;
+}
+body img{
+    width:300px;
+    height:300px;
+    padding:30px;
+}
